@@ -1,0 +1,103 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+a.navbar {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+     
+}
+#navbar-div {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 15px;
+    padding: 10px 40px;
+    font-weight: 500;
+}
+
+#backdrop {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 25px;
+    padding: 0px 8%;
+    margin-top: 8%;
+}
+
+#backdrop > div {
+    width: 40%;
+    
+}
+
+#left_column {
+    flex-basis: 50%;
+    color: #21243D;
+
+}
+#left_column > h1 {
+    font-weight: 700;
+    font-size: 44px;
+   
+}
+#left_column > p {
+    font-weight: 400;
+    font-size: 16px;
+   
+}
+#left_column_button {
+    background-color: #FF6464;
+    color: white;
+    font-weight: 500;
+    font-size: 18 px;
+    padding: 10px 20px;
+    border: 0;
+   
+}
+#right_column {
+    flex-basis: 45%;
+    text-align: center;
+    
+}
+#recent_blog {
+    background-color: #EDF7FA;
+    padding: 2% 8%;
+}
+#recent_header {
+    display: flex;
+    justify-content: space-between;
+}
+#recent_header > h4{
+    font-weight: 400;
+    font-size: 22px;
+    color: #21243D;
+    margin: 0;
+}
+div.card {
+    color:#21243D;
+    font-weight:400;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 22px;
+}
+div.card>h2 {
+    
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.card>span {
+    
+    padding: 5px 10px;
+    font-size: 18px;
+}
+div.card>p {
+    font-size: 16px;
+}
+#card-container {
+    display: flex;
+    column-gap: 1%;
+}
