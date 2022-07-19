@@ -160,10 +160,16 @@ section.featured-works {
 
 @media screen and (min-width: 500px) {
     div.horizontal-card {
+        flex-direction: row;
+        column-gap: 3%;
+        
+    }
+    section.featured-works {
+        background-color: #FFFFFF;
+        padding: 1.5% 8%;
         display: flex;
         flex-direction: row;
-        row-gap: 20px;
-        
+        column-gap: 30px;
     }
 }
 
@@ -171,7 +177,7 @@ div.horizontal-card {
     display: flex;
     flex-direction: column;
     
-    column-gap: 3%;
+    row-gap: 10px;
    
 }
 span.pill {
