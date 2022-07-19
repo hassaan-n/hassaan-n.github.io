@@ -1,6 +1,7 @@
 body {
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
+    padding-bottom: 5%
 }
 a {
     text-decoration: none;
@@ -21,25 +22,51 @@ a.navbar {
 
 #backdrop {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-around;
     column-gap: 25px;
-    padding: 0px 8%;
-    margin-top: 8%;
+    padding: 3% 8%;
+    margin-top: 4%;
+    text-align: center;
+}
+img.dp {
+    width: 200px;
+    height: auto;
 }
 
-#backdrop > div {
-    width: 40%;
-    
+@media screen and (min-width: 500px) {
+    #backdrop {
+    flex-direction: row;
+    text-align: left;
+    }
+    #left_column {
+        width: 50%;
+    }
+    img.dp {
+        width: 300px;
+        height: auto;
+    }
+    #right_column {
+        flex-basis: 45%;
+        
+    }
+    #left_column > h1 {
+        font-weight: 700;
+        font-size: 44px;
+       
+    }
+   
 }
 
 #left_column {
-    flex-basis: 50%;
+    width: 100%;
     color: #21243D;
+    padding: 1% 1%;
 
 }
 #left_column > h1 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 32px;
    
 }
 #left_column > p {
@@ -57,19 +84,20 @@ a.navbar {
    
 }
 #right_column {
-    flex-basis: 45%;
+    flex-basis: 100%;
     text-align: center;
     
 }
 #recent_blog {
     background-color: #EDF7FA;
-    padding: 2% 8%;
+    padding: 5% 2%;
+    
 }
 #recent_header {
     display: flex;
     justify-content: space-between;
 }
-#recent_header > h4{
+.my-h4{
     font-weight: 400;
     font-size: 22px;
     color: #21243D;
@@ -80,14 +108,16 @@ div.card {
     font-weight:400;
     background-color: white;
     border-radius: 5px;
-    padding: 20px 22px;
+    padding: 20px 18px;
+    width: 90%;
 }
-div.card>h2 {
+h2.my-h2 {
     
     font-weight: 700;
     font-size: 26px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color:#21243D;
 }
 div.card>span {
     
@@ -99,5 +129,87 @@ div.card>p {
 }
 #card-container {
     display: flex;
-    column-gap: 1%;
+    flex-direction: column;
+    row-gap: 30px;
+   
+}
+@media screen and (min-width: 500px) {
+    #card-container {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 1%;
+    }
+    #recent_blog {
+        background-color: #EDF7FA;
+        padding: 2% 8%;
+    }
+    div.card {
+        
+        padding: 20px 22px;
+        width: 100%;
+    }
+}
+/* Featured works */
+section.featured-works {
+    background-color: #FFFFFF;
+    padding: 5% 8%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+@media screen and (min-width: 500px) {
+    div.horizontal-card {
+        display: flex;
+        flex-direction: row;
+        row-gap: 20px;
+        
+    }
+}
+
+div.horizontal-card {
+    display: flex;
+    flex-direction: column;
+    
+    column-gap: 3%;
+   
+}
+span.pill {
+    background-color: #142850;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+span.secondary-text {
+    color: #8695A4;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 20px;
+}
+div.horizontal-card > div > p{
+    color: #21243D;
+    font-size: 16px;
+}
+div.horizontal-card > img {
+    border-radius: 6px;
+}
+/*socials*/
+#socials {
+    text-align: center;
+    font-size: 30px;
+    color: #21243D;
+    align-items: baseline;
+}
+#socials > i {
+    padding: 5px;
+}
+#socials > a {
+    color: #21243D;
+}
+#socials > p {
+    color: #8695A4;
+    font-size: 16px;
+    font-weight: 400;
 }
